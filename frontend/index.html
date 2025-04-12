@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/blockchain-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockImage Saver - Blockchain Image Storage</title>
+    <meta name="description" content="Store your images on IPFS and Ethereum blockchain securely and permanently." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.addEventListener('load', function() {
+        if (typeof window.ethereum === 'undefined') {
+          console.warn('MetaMask is not installed!');
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
